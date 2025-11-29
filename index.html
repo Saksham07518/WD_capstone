@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LearnHive — Online Courses</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="logo.png"
+                    alt="LearnHive logo" class="logo" />
+                <span class="brand-title">LearnHive</span>
+            </div>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#instructors">Instructors</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-outline">Log in</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Learn new skills. Grow your career.</h1>
+                    <p class="lead">Interactive courses, expert instructors, and hands-on projects. Start learning today
+                        — at your own pace.</p>
+
+                    <form class="search-form" role="search" aria-label="Search courses">
+                        <input type="search" name="q" placeholder="Search courses, e.g. JavaScript, Data Science"
+                            aria-label="Search courses" />
+                        <select aria-label="Category">
+                            <option value="">All categories</option>
+                            <option>Development</option>
+                            <option>Design</option>
+                            <option>Business</option>
+                            <option>Data</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+
+                    <div class="hero-stats">
+                        <div><strong>1.2M+</strong><span>Students</span></div>
+                        <div><strong>3.5k</strong><span>Courses</span></div>
+                        <div><strong>900+</strong><span>Experts</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-media" aria-hidden="true">
+                    <img src="students.png"
+                        alt="Students learning illustration" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="categories" class="section container">
+            <h2 class="section-title">Popular categories</h2>
+            <ul class="categories">
+                <li class="cat">Development</li>
+                <li class="cat">Data Science</li>
+                <li class="cat">Design</li>
+                <li class="cat">Business</li>
+                <li class="cat">Marketing</li>
+                <li class="cat">Personal Growth</li>
+            </ul>
+        </section>
+
+        <!-- COURSES -->
+        <section id="courses" class="section bg-light">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Featured courses</h2>
+                    <div class="filters">
+                        <label>Sort:
+                            <select aria-label="Sort courses">
+                                <option>Popular</option>
+                                <option>Newest</option>
+                                <option>Highest rated</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- course card -->
+                    <article class="course-card">
+                        <img src="jsessentials.png"
+                            alt="Course cover: JavaScript Essentials">
+                        <div class="course-body">
+                            <h3 class="course-title">JavaScript Essentials</h3>
+                            <p class="course-meta">By Priya Sharma · 12h · Beginner</p>
+                            <p class="course-desc">Learn core JavaScript concepts and build interactive web apps.</p>
+                            <div class="card-footer">
+                                <span class="price">₹499</span>
+                                <button class="btn btn-outline small">Preview</button>
+                                <button class="btn btn-primary small">Enroll</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="data.png"
+                            alt="Course cover: Data Analysis with Python">
+                        <div class="course-body">
+                            <h3 class="course-title">Data Analysis with Python</h3>
+                            <p class="course-meta">By Rohit Verma · 18h · Intermediate</p>
+                            <p class="course-desc">Pandas, NumPy, and real-world datasets to master data analysis.</p>
+                            <div class="card-footer">
+                                <span class="price">₹699</span>
+                                <button class="btn btn-outline small">Preview</button>
+                                <button class="btn btn-primary small">Enroll</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="ui.png"
+                            alt="Course cover: UI/UX Foundations">
+                        <div class="course-body">
+                            <h3 class="course-title">UI/UX Foundations</h3>
+                            <p class="course-meta">By Ananya Singh · 10h · Beginner</p>
+                            <p class="course-desc">Design thinking, prototyping, and user research basics.</p>
+                            <div class="card-footer">
+                                <span class="price">₹399</span>
+                                <button class="btn btn-outline small">Preview</button>
+                                <button class="btn btn-primary small">Enroll</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="course-card">
+                        <img src="product.png"
+                            alt="Course cover: Product Management">
+                        <div class="course-body">
+                            <h3 class="course-title">Product Management 101</h3>
+                            <p class="course-meta">By Karan Mehta · 8h · Beginner</p>
+                            <p class="course-desc">From idea to launch — product strategy and execution.</p>
+                            <div class="card-footer">
+                                <span class="price">₹599</span>
+                                <button class="btn btn-outline small">Preview</button>
+                                <button class="btn btn-primary small">Enroll</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTRUCTORS -->
+        <section id="instructors" class="section container">
+            <h2 class="section-title">Top instructors</h2>
+            <div class="instructors-grid">
+                <div class="instructor">
+                    <img src="ps.png"
+                        alt="Instructor Priya Sharma">
+                    <h4>Priya Sharma</h4>
+                    <p class="muted">Web Developer · 12k students</p>
+                </div>
+
+                <div class="instructor">
+                    <img src="rv.png"
+                        alt="Instructor Rohit Verma">
+                    <h4>Rohit Verma</h4>
+                    <p class="muted">Data Scientist · 9k students</p>
+                </div>
+
+                <div class="instructor">
+                    <img src="as.png"
+                        alt="Instructor Ananya Singh">
+                    <h4>Ananya Singh</h4>
+                    <p class="muted">Product Designer · 7k students</p>
+                </div>
+
+                <div class="instructor">
+                    <img src="km.png"
+                        alt="Instructor Karan Mehta">
+                    <h4>Karan Mehta</h4>
+                    <p class="muted">Product Manager · 5k students</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section id="pricing" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="plan">
+                        <h3>Free</h3>
+                        <p class="price-big">₹0</p>
+                        <ul>
+                            <li>Limited courses</li>
+                            <li>Community support</li>
+                            <li>Basic projects</li>
+                        </ul>
+                        <button class="btn btn-outline">Get started</button>
+                    </div>
+
+                    <div class="plan popular">
+                        <h3>Pro</h3>
+                        <p class="price-big">₹999 / year</p>
+                        <ul>
+                            <li>Unlimited access</li>
+                            <li>Certificates</li>
+                            <li>Offline downloads</li>
+                        </ul>
+                        <button class="btn btn-primary">Go Pro</button>
+                    </div>
+
+                    <div class="plan">
+                        <h3>Team</h3>
+                        <p class="price-big">Contact us</p>
+                        <ul>
+                            <li>Team seats</li>
+                            <li>Admin dashboard</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <button class="btn btn-outline">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section container">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <div class="faq-grid">
+                <details>
+                    <summary>How long do I have access to a course?</summary>
+                    <p>Access lasts as long as you have an active subscription or purchased lifetime access.</p>
+                </details>
+
+                <details>
+                    <summary>Do you offer certificates?</summary>
+                    <p>Yes — most Pro courses include a completion certificate.</p>
+                </details>
+
+                <details>
+                    <summary>Can I get a refund?</summary>
+                    <p>We provide a 14-day refund policy on yearly Pro plans (terms apply).</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- FOOTER / SUBSCRIBE -->
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <img src="logo.png"
+                        alt="LearnHive logo" class="logo small" />
+                    <p class="muted small">LearnHive — Learn skills that matter.</p>
+                </div>
+
+                <form class="subscribe-form" aria-label="Subscribe to newsletter">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input id="email" type="email" placeholder="your@email.com" required>
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </form>
+
+                <nav aria-label="Footer navigation">
+                    <ul class="footer-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
